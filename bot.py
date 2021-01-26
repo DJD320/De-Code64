@@ -10,7 +10,6 @@ client.remove_command('help')
 
 @client.event
 async def on_ready():
-#    await client.change_presence(status=discord.Status.do_not_disturb, activity=discord.Game('debug'))
     change_status.start()
     print('The bot is ready.')
 
@@ -39,7 +38,6 @@ async def help(ctx):
     
 
 @client.command(aliases=['e'])
-# @commands.guild_only()
 async def encode(ctx, *, string):
     string_bytes = string.encode("ascii")
     base64_bytes = base64.b64encode(string_bytes) 
@@ -48,18 +46,11 @@ async def encode(ctx, *, string):
     await ctx.send(":white_check_mark:")
 
 @client.command(aliases=['d'])
-# @commands.guild_only()
 async def decode(ctx, *, string):
     string_bytes = string.encode("ascii")
     base64_bytes = base64.b64decode(string_bytes) 
     base64_string = base64_bytes.decode("ascii") 
     await ctx.author.send(f'Non-Decoded: {string}\nDecoded: {base64_string}')
     await ctx.send(":white_check_mark:")
-
-
-# @client.command(aliases=['e'])
-# async def encode(ctx, *, nonenc):
-#     await ctx.send(f'Non encoded: {nonenc}\nEncoded: {nonenc.encode()}')
-
 
 client.run('YOUR TOKEN HERE')

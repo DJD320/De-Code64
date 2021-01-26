@@ -23,3 +23,8 @@ You can run the bot locally, in a vps, using heroku.
 ```python
 client.run('YOUR TOKEN HERE')
 ```
+## Contacts / Help:
+
+If you need help or you need to contact me, you can do it here:
+
+Discord: `DJD320#7656`

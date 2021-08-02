@@ -32,7 +32,7 @@ async def help(ctx):
     helpEmbed.set_image(url='https://cdn.discordapp.com/avatars/765891165382770709/e0b1e90cf6d0a559923a13b724d27b65.png')
     helpEmbed.add_field(name='.help', value="Shows this!" , inline=True)
     helpEmbed.add_field(name='.encode "TextToEncode" / .e "TextToEncode"', value="Encodes your text!" , inline=True)
-    helpEmbed.add_field(name='.decode "TextToEncode" / .d "TextToEncode"', value="Decodes your text!" , inline=True)
+    helpEmbed.add_field(name='.decode "TextToDecode" / .d "TextToDecode"', value="Decodes your text!" , inline=True)
     helpEmbed.add_field(name='.ping', value="Pong!" , inline=True)
     await ctx.send(embed=helpEmbed)
     

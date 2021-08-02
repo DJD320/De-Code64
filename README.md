@@ -6,7 +6,7 @@ De-Code64 is a simple and custom discord bot created with the purpose of simplif
 
 Encodes your text!
 
-- **.decode "TextToEncode"** / **.d "TextToEncode"**
+- **.decode "TextToDecode"** / **.d "TextToDecode"**
 
 Decodes your text!
 
